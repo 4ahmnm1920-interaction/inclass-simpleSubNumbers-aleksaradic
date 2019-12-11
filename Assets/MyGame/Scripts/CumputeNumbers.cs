@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class CumputeNumbers : MonoBehaviour
@@ -11,7 +9,10 @@ public class CumputeNumbers : MonoBehaviour
     public Button btnSubNumbers;
     public Button btnReset;
 
-    int index = 0;
+    void Start()
+    {
+        btnReset.interactable = false;
+    }
 
     public void ResetOnClick()
     {
